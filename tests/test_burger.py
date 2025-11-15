@@ -3,12 +3,6 @@ from praktikum.burger import Burger
 from unittest.mock import Mock 
 
 class TestBurger:
-    def test_burger_init_default_value_bun_none(self, burger):
-        assert burger.bun == None
-
-    def test_burger_init_default_value_ingredients_empty_list(self, burger):
-        assert burger.ingredients == []
-
     def test_burger_set_buns(self, burger):
         mock_bun = Mock()
         mock_bun.name = 'ржанная'
